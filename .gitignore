@@ -1,8 +1,3 @@
-claude_light.db
-claude_light.db-info
-claude_light.db-shm
-claude_light.db-wal
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
