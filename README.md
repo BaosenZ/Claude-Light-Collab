@@ -55,3 +55,13 @@ R2 after : {'I_445': 0.982, 'I_515': 0.984, 'I_630': 0.978, 'I_clear': 0.83}
 ```
 
 We can see clearly that for each day, model performance (R2) enhanced after adaptation with 10 examples per day(`few-shot=10`). This confirms that meta-learning can adjust to daily drift better than static RF, though the performance especially I_clear is not comparable to the RF. The detailed procedure is in folder `version_251123_meta-learning`.  
+
+## Data access
+
+Free free to use reading API key to access original database: 
+```text
+CLAUDELIGHT_RO=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicm8iLCJpYXQiOjE3NTM5Nzk4OTEsImlkIjoiMjQ3MzE1MDMtNzNlNi00NDlmLTk0YWUtOTViMjAwY2FkNmQ4IiwicmlkIjoiMDA2NmIwOTMtMjdjOC00N2UxLTg2ZjctMTQ0NTJkOWU5OTM3In0.ueY--MT-mmEa_dlWNBW6VI32Rphj4r92vVRZ6WdRv_T0frMLWHSdlxSU11oMvTRS5dd9Y8AOUTt-TFHm1d_uDA
+CLAUDELIGHT_DB_URL=libsql://claude-light-baosenzhang.aws-us-east-1.turso.io
+```
+
+The data including weather information is in the folder `version_251123_meta-learning/data/data_full.csv`.  
